@@ -1,0 +1,15 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "enabled": false
+    },
+    {
+      "matchManagers": ["gomod"],
+      "vulnerabilityAlertsOnly": true,
+      "labels": ["security"],
+      "enabled": true
+    }
+  ]
+}
